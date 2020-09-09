@@ -20,7 +20,7 @@ from django.conf import settings
 from portfolio import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home,'home'),
+    path('', views.home,'home',name='home'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
